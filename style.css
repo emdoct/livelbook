@@ -125,12 +125,13 @@ body, html {
 	}
 
 	.first-screen__text p:nth-of-type(1) {
-		
+		margin: 0 auto;
 		max-width: 720px;
 	}
 
 	.first-screen__text p:nth-of-type(2) {
-		margin-top: 49px;
+		margin: 49px auto 0 auto;
+		
 		max-width: 780px;
 	}
 
@@ -167,15 +168,20 @@ body, html {
 		
 			bottom: -140px;
 			z-index: 1;
-			width: 165%;
-			max-height: 720px;
+			width: 100%;
+			max-height: 770px;
 			height: 100%;
+			overflow: hidden;
 		
 	}
 
 	.first-screen__gradient img {
-		width: 100%;
+		position: relative;
+		width: 130%;
 		height: 100%;
+		left: -67px;
+		overflow: hidden;
+
 	}
 
 .second-screen__block {
@@ -213,13 +219,28 @@ body, html {
 	}
 
 	.second-screen__head {
+		position: relative;
 		width: 100%;
-		background-image: url('img/Back_NASA.png');
+		/*background-image: url('img/Back_NASA.png');
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center;*/
 		margin-top: 164px;
 		padding: 70px 0;
+	}
+
+	.second-screen__head__bg {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+		top: 0;
+		height: 100%;
+	}
+
+	.second-screen__head__bg img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.second-screen__head__text {
@@ -334,7 +355,7 @@ body, html {
 		margin: 0;
 		color: white;
 		background-color: black;
-
+		background-size: cover;
 	}
 
 	.copyright-info p {
