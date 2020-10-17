@@ -221,10 +221,7 @@ body, html {
 	.second-screen__head {
 		position: relative;
 		width: 100%;
-		/*background-image: url('img/Back_NASA.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;*/
+		
 		margin-top: 164px;
 		padding: 70px 0;
 	}
