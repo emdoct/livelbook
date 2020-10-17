@@ -52,7 +52,6 @@ body, html {
 	}
 
 	.first-screen__bg {
-		min-height: 100vh;
 		position: absolute;
 		z-index: 0;
 		width: 100%;
@@ -165,15 +164,18 @@ body, html {
 
 	.first-screen__gradient {
 		position: absolute;
-		bottom: 0;
-		z-index: 1;
+		
+			bottom: -140px;
+			z-index: 1;
+			width: 165%;
+			max-height: 720px;
+			height: 100%;
+		
+	}
+
+	.first-screen__gradient img {
 		width: 100%;
-		max-height: 675px;
 		height: 100%;
-		background-image: url('img/gradient.png');
-		background-repeat: no-repeat;
-		background-position-y: -45px;
-		background-size: 100%; 
 	}
 
 .second-screen__block {
