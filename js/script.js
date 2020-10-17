@@ -1,7 +1,7 @@
 
 let btn = document.querySelector('.btn');
 setTimeout(slowShow, 300);
-
+setTimeout(slowShowbtn, 1400);
 function slowShow() {
 	let textHide = document.querySelector('.first-screen__text');
 	let bgHide = document.querySelector('.first-screen__bg');
@@ -9,8 +9,12 @@ function slowShow() {
 	textHide.classList.toggle('hidden');
 	bgHide.classList.toggle('hidden');
 	logoHide.classList.toggle('hidden');
-	btn.classList.toggle('hidden');
 	
+	
+}
+
+function slowShowbtn() {
+	btn.classList.toggle('hidden');
 }
 
 
