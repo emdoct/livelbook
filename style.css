@@ -2,7 +2,7 @@
 	font-family: 'lato';
 	
 	src: url('fonts/Lato-Regular.ttf');
-	font-weight: normal;
+	font-weight: 600;
 	font-style: normal;
 
 }
@@ -29,7 +29,8 @@ body, html {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	font-family: Lato;
+	font-family: 'lato';
+	font-weight: 600;
 
 }
 
@@ -252,7 +253,7 @@ body, html {
 		margin: 0;
 		font-size: 21px;
 		line-height: 28px;
-		letter-spacing: 2%;
+		letter-spacing: 0.5px;
 	}
 
 	.second-screen__bottom__text {
@@ -416,6 +417,7 @@ body, html {
 	.copyright-info {
 		flex-direction: column;
 		align-content: center;
+		justify-content: center;
 		padding: 20px 65px 29px 42px;
 		margin-top: 64px;
 	}
@@ -437,6 +439,13 @@ body, html {
 		max-width: 230px;
 	}
 
+	.second-screen__head__text  {
+		font-size: 12px;
+	}
+
+	.first-screen__text, .second-screen__top__text p, .second-screen__bottom__text p {
+		font-size: 10px;
+	}
 	.second-screen__links {
 		margin-left: auto;
 	}
