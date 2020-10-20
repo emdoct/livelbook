@@ -32,16 +32,19 @@ body, html {
 	font-family: 'lato';
 	font-weight: 600;
 
+
 }
 
-
+button {
+	position: absolute;
+}
 
 
 .first-screen__block {
 	width: 100%;
 	position: relative;
 	background-color: black;
-	
+	overflow: hidden;
 }
 
 	.first-screen__container, .second-screen__container {
@@ -138,6 +141,7 @@ body, html {
 
 	.btn {
 		margin-top: 55px;
+		margin-bottom: 200px;
 		z-index: 2;
 		opacity: 1;
 		transition: 1.5s;
@@ -154,8 +158,21 @@ body, html {
 	}
 
 	.first-screen__bottom__img {
+		position: absolute;
 		margin-top: 95px;
 		z-index: 2;
+		right: 0;
+		bottom: 0px;
+		transition: 1.5s;
+		opacity: 1;
+		max-width: 1600px;
+		width: 100%;
+	}	
+
+	.first-screen__bottom__img.hidden{
+		right: -150%;
+		transition: 1.5s; 
+		opacity: 0;
 	}
 
 
@@ -197,13 +214,25 @@ body, html {
 		align-items: center;
 		text-align: center;
 		padding-bottom: 52px;
+		position: relative;
 	}
 
 	
 
 	.second-screen__top__img {
 		max-width: 100%;
+		position: absolute;
+		margin: 0 auto;
+		transition: 2.5s;
+		left: 0;
+		opacity: 1;
 		
+	}
+
+	.second-screen__top__img.hidden {
+		left: -150%;
+		transition: 1.5s;
+		opacity: 0;
 	}
 
 	.second-screen__top__img img {
@@ -211,7 +240,7 @@ body, html {
 	}
 
 	.second-screen__top__text {
-		margin-top: 71px;
+		margin-top: 201px;
 		max-width: 785px;
 		line-height: 26px;
 		font-size: 18px;
@@ -266,8 +295,7 @@ body, html {
 	}
 
 	.second-screen__links {
-		margin-top: 91px;
-		margin-left: 146px;
+		margin: 91px auto 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -290,13 +318,6 @@ body, html {
 		transition: 0.7s;
 	}
 
-	.second-screen__links a:nth-of-type(2) {
-		margin-top: 52px;
-	}
-
-	.second-screen__links a:nth-of-type(3) {
-		margin-top: 63px;
-	}
 
 	.litress::before {
 		content: " ";
@@ -311,31 +332,7 @@ body, html {
 		top: 5px;
 	}
 
-	.ibook::before {
-		content: " ";
-		position: absolute;
-		display: block;
-		background-image: url(img/iBooks.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: 80px;
-		height:	80px;
-		left: -135px;
-		top: -14px;
-	}
-
-	.buy::before {
-		content: " ";
-		position: absolute;
-		display: block;
-		background-image: url(img/Ozon.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: 136px;
-		height:	30px;
-		left: -163px;
-		top: 10px;
-	}
+	
 
 	.copyright-info {
 		display: flex;
@@ -388,23 +385,20 @@ body, html {
 		padding: 3px 7px 3px 9px;
 	}
 
-@media (max-width: 1510px)  {
-	.second-screen__container {
-		padding-left: 15px;
-		padding-right: 15px;
+@media (max-width: 800px){
+	p {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
-
+	
 @media (max-width: 700px)  {
 
 	.first-screen__text {
 		padding: 0 10px;
 		font-size: 14px;
 	}
-	.second-screen__container {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+	
 
 	.second-screen__head {
 		margin-top: 70px;
@@ -433,30 +427,30 @@ body, html {
 	}
 }
 
-@media (max-width: 500px)  {
+@media (max-width: 620px)  {
 
 	.logo {
 		max-width: 230px;
 	}
 
-	.second-screen__head__text  {
-		font-size: 12px;
+	.second-screen__head__text  h1{
+		font-size: 14px;
 	}
 
 	.first-screen__text, .second-screen__top__text p, .second-screen__bottom__text p {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.second-screen__links {
 		margin-left: auto;
 	}
 	.second-screen__links a {
-		width: 215px;
+		width: 150px;
 		font-size: 12px;
 		padding: 10px 0 10px 0;
 	}
 
 	.litress::before {
-		width: 80px;
+		width: 70px;
 		height: 28px;
 		left: -87px;
 		top: 5px;
