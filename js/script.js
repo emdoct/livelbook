@@ -50,11 +50,14 @@ function WhiteTextAnimation() {
 	let whiteText = document.querySelector('.second-screen__top__img');
 	const whiteTextHeight = whiteText.offsetHeight;
 	const whiteTextOffset = offset(whiteText).top;
-	const start = 4;
+	const start = 0.5;
 	let whiteTextPoint = window.innerHeight - whiteTextHeight / start;
 
 	if ((pageYOffset > whiteTextOffset - whiteTextPoint) && pageYOffset < (whiteTextOffset + whiteTextHeight)) {
 		whiteText.classList.remove('hidden');
+	}
+	else {
+		whiteText.classList.add('hidden');
 	}
 }
 
@@ -62,11 +65,15 @@ function BlackTextAnimation() {
 	let blackText = document.querySelector('.first-screen__bottom__img');
 	const blackTextHeight = blackText.offsetHeight;
 	const blackTextOffset = offset(blackText).top;
-	const start = 4;
+	const start = 0.5;
 	let blackTextPoint = window.innerHeight - blackTextHeight / start;
 
 	if ((pageYOffset > blackTextOffset - blackTextPoint) && pageYOffset < (blackTextOffset + blackTextHeight)) {
 		blackText.classList.remove('hidden');
+	}
+
+	else {
+		blackText.classList.add('hidden');
 	}
 }
 
