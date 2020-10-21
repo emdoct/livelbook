@@ -160,12 +160,12 @@ button {
 	.first-screen__bottom__img {
 		position: absolute;
 		margin-top: 95px;
-		z-index: 2;
+		z-index: 12;
 		right: 0;
 		bottom: 0px;
 		transition: 1.5s;
 		opacity: 1;
-		max-width: 1600px;
+		
 		width: 100%;
 	}	
 
@@ -220,7 +220,7 @@ button {
 	
 
 	.second-screen__top__img {
-		max-width: 100%;
+		width: 100%;
 		position: absolute;
 		margin: 0 auto;
 		transition: 2.5s;
